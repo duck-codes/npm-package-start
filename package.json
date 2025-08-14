@@ -1,11 +1,26 @@
 {
-  "name": "npm-package-start",
-  "version": "1.0.0",
-  "main": "index.js",
+  "name": "@duckbb/npm-package-start",
+  "version": "1.2.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "e2e": "node e2e/index.mjs"
   },
-  "author": "",
+  "author": "Duck",
   "license": "ISC",
-  "description": ""
+  "description": "A simple npm package to get started with npm",
+  "keywords": [
+    "npm",
+    "package",
+    "start"
+  ],
+  "devDependencies": {
+    "typescript": "^5.9.2"
+  }
 }

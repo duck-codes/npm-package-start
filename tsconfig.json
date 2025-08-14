@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+      "target": "ES2017",               // 编译后的 JS 目标版本，ES2017 支持 async/await 等
+      "module": "ESNext",               // 输出模块类型，ESNext 对应 ESM（import/export）
+      "declaration": true,              // 生成类型声明文件 (.d.ts)
+      "outDir": "dist",                 // 编译输出目录
+      "strict": true,                    // 开启严格模式，启用所有严格类型检查选项
+    //   "esModuleInterop": true,          // 支持 CommonJS 模块默认导入，兼容 require() 的模块
+    //   "skipLibCheck": true,             // 跳过库文件类型检查，提高编译速度
+      "moduleResolution": "Node",       // 模块解析策略，Node 风格（支持 node_modules）
+      "forceConsistentCasingInFileNames": true // 强制文件名大小写一致，避免跨平台问题
+    },
+    "include": ["src"]                  // 指定编译器要包含的文件或目录，这里只编译 src 文件夹
+}

@@ -8,8 +8,8 @@
     "dist"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "tsc",
+    "test": "vitest",
     "e2e": "node e2e/index.mjs"
   },
   "author": "Duck",
@@ -21,6 +21,7 @@
     "start"
   ],
   "devDependencies": {
-    "typescript": "^5.9.2"
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   }
 }
